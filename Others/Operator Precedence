@@ -1,0 +1,42 @@
+
+
+Operator 	    Description	                                            Associativity
+
+
+( )   	    Parentheses (function call) (see Note 1)
+[ ]         Brackets (array subscript) 
+.           Member selection via object name                            left-to-right
+->          Member selection via pointer 
+++ –-       Postfix increment/decrement (see Note 2)	
+
+
+++ ––       Prefix increment/decrement   
++ –         Unary plus/minus 
+! ~         Logical negation/bitwise complement 
+(type)      Cast (convert value to temporary value of type)           	right-to-left
+*           Dereference 
+&           Address (of operand)
+sizeof	    Determine size in bytes on this implementation
+
+    
+
+*  /  %	    Multiplication/division/modulus	                            left-to-right
++  –	    Addition/subtraction	                                    left-to-right
+<<  >>	    Bitwise shift left, Bitwise shift right	                    left-to-right
+<  <=       Relational less than/less than or equal to 
+>  >=	    Relational greater than/greater  than or equal to	        left-to-right
+==  !=	    Relational is equal to/is not equal to	                    left-to-right
+&	        Bitwise AND	                                                left-to-right
+^	        Bitwise exclusive OR	                                    left-to-right
+|	        Bitwise inclusive OR	                                    left-to-right
+&&	        Logical AND	                                                left-to-right
+| |	        Logical OR	                                                left-to-right
+? :	        Ternary conditional	                                        right-to-left
+=           Assignment
++=  -=      Addition/subtraction assignment 
+*=  /=      Multiplication/division assignment
+%=  &=      Modulus/bitwise AND assignment
+^=  |=      Bitwise exclusive/inclusive OR assignment 
+<<=  >>=    Bitwise shift left/right assignment                     	right-to-left     	 
+
+,	        Comma (separate expressions)                            	left-to-right

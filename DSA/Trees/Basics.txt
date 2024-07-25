@@ -1,0 +1,55 @@
+A Tree is a collection of n nodes. 
+means one root node and n-1 edges connecting each node to its parent except the root node
+Each node can have either any number of children or no children at all
+
+Tree Related definitions:
+
+Parent - Node A is the parent of node B, if B is in one of the subtree of A.
+Child - Node B is the child of node A, if A is the parent of B.
+Sibling - Nodes with the same parent are siblings
+Leaf - A node is called a leaf if it has no children
+Path - A Path from node n1 to nk is defined as a sequence of nodes n1, n2…, nk such that ni is the parent of ni+1 for 1 <= i < K.
+Length - The Length of the path is the number of edges on the path
+Depth 
+    - The depth of ni is the length of the unique path from the root to ni
+    - The root is at depth 0
+Height
+    - The height of ni is the length of the longest path from ni to a leaf
+    - All leaves are at height 0
+    - The height of a tree is equal to the height of the root
+
+Binary Trees: 
+A binary tree is a tree in which no node can have more than two children.  
+
+The maximum number of nodes possible in any level n, is 2^n.
+The maximum number of nodes possible in a tree of height h: 2^(h+1) - 1
+The minimum number of nodes possible in a tree of height h: h + 1
+
+A binary tree is called strictly binary tree if every nonleaf node in the tree has nonempty left and right subtrees. i.e., every nonleaf node has two children.
+A complete binary tree of depth d is a strictly binary tree with all leaf nodes at level d.
+
+Full/ Proper/ Strict Binary Tree: 
+Complete Binary Tree:
+Perfect Binary Tree:
+Degenerate Binary Tree:
+
+
+Depth of the Binary Tree:
+Average depth of the binary Tree: √N
+Average depth of binary search tree: log(N)
+Worst case depth of the binary tree: N-1
+
+
+Expression Tree:
+Algorithm to convert postfix expression into expression tree:
+- If Input symbol is an operand, 
+    • Create one-node tree for the operand and push the pointer of the node onto the stack.
+- If input symbol is an Operator, 
+    • Create one-node tree for the operator, and
+    • Pop the top two items from the stack and
+    • Make them the left and right child of the operator node and 
+    • Push the pointer of the operator node onto the stack
+
+Binary Search Tree:
+For every node X in the tree, the values of all the keys in its left subtree are smaller than the key value in X and the values of all the keys in its right subtree are larger than the key value in X.
+
